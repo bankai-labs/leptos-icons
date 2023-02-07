@@ -1,1 +1,1 @@
-use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < polygon points = "13 2 3 14 12 14 11 22 21 10 12 10 13 2" /> < / > } } pub const LucideZap : Path = Path { path : icon_path , icon_type : IconType::HeroIcons(crate::HeroIconsType::Mini) , } ;
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < polygon points = "13 2 3 14 12 14 11 22 21 10 12 10 13 2" /> < / > } } pub const LucideZap : Path = Path { path : icon_path , icon_type : IconType::Lucide , } ;
