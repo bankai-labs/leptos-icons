@@ -49,7 +49,6 @@ pub fn Icon(
     #[prop(into)]
     #[prop(default = "".to_string())]
     height: MaybeSignal<String>,
-
 ) -> impl IntoView {
     match path.icon_type {
         IconType::HeroIcons(HeroType) => match HeroType {
