@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < path stroke - linecap = "round" stroke - linejoin = "round" d = "M19.5 19.5l-15-15m0 0v11.25m0-11.25h11.25" /> < / > } } pub const HeroiconsOutlineArrowUpLeft : Path = Path { path : icon_path , icon_type : IconType::HeroIcons(crate::HeroIconsType::Outline) , } ;

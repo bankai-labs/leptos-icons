@@ -1,6 +1,7 @@
 use leptos::*;
 
-pub mod test;
+mod generated;
+pub use generated::*;
 
 #[derive(Clone)]
 pub struct Path {
@@ -46,6 +47,7 @@ pub fn Icon(
             HeroIconsType::Outline => {
                 view! {cx,
                     <svg xmlns="http://www.w3.org/2000/svg" class=class() width="24" height="24" viewBox="0 0 24 24"
+                        data-license="From https://github.com/tailwindlabs/heroicons - Licensed under MIT"
                         fill=move || fill().is_empty().then_some("none".to_string()).unwrap_or(fill())
                         stroke-width=move || stroke_width().is_empty().then_some("2".to_string()).unwrap_or(stroke_width())
                         stroke=move || stroke().is_empty().then_some("currentColor".to_string()).unwrap_or(stroke())
@@ -57,6 +59,7 @@ pub fn Icon(
             HeroIconsType::Solid => {
                 view! {cx,
                     <svg xmlns="http://www.w3.org/2000/svg" class=class() width="24" height="24" viewBox="0 0 24 24"
+                        data-license="From https://github.com/tailwindlabs/heroicons - Licensed under MIT"
                         fill=move || fill().is_empty().then_some("currentColor".to_string()).unwrap_or(fill())
                         stroke-width=move || stroke_width().is_empty().then_some("2".to_string()).unwrap_or(stroke_width()) stroke=move || stroke().is_empty().then_some("currentColor".to_string()).unwrap_or(stroke())
                     >
@@ -67,6 +70,7 @@ pub fn Icon(
             HeroIconsType::Mini => {
                 view! {cx,
                     <svg xmlns="http://www.w3.org/2000/svg" class=class() width="20" height="20" viewBox="0 0 20 20"
+                        data-license="From https://github.com/tailwindlabs/heroicons - Licensed under MIT"
                         fill=move || fill().is_empty().then_some("currentColor".to_string()).unwrap_or(fill())
                         stroke-width=move || stroke_width().is_empty().then_some("2".to_string()).unwrap_or(stroke_width()) stroke=move || stroke().is_empty().then_some("currentColor".to_string()).unwrap_or(stroke())
                     >
