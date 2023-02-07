@@ -166,7 +166,7 @@ fn main() {
     generate(
         "Lucide",
         "lucide/icons",
-        "IconType::HeroIcons(crate::HeroIconsType::Mini)",
+        "IconType::Lucide",
     );
 
     let tokens = quote! {
