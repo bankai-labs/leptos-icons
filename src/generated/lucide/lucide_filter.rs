@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < polygon points = "22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" /> < / > } } pub const LucideFilter : Path = Path { path : icon_path , icon_type : IconType::Lucide , } ;

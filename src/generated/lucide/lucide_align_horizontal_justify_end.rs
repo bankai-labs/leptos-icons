@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < rect x = "2" y = "5" width = "6" height = "14" rx = "2" /> < rect x = "12" y = "7" width = "6" height = "10" rx = "2" /> < path d = "M22 2v20" /> < / > } } pub const LucideAlignHorizontalJustifyEnd : Path = Path { path : icon_path , icon_type : IconType::Lucide , } ;

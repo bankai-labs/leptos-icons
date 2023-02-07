@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < rect x = "2" y = "6" width = "20" height = "12" rx = "6" ry = "6" /> < circle cx = "8" cy = "12" r = "2" /> < / > } } pub const LucideToggleLeft : Path = Path { path : icon_path , icon_type : IconType::Lucide , } ;

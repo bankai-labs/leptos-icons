@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < path d = "M14 11c5.333 0 5.333-8 0-8" /> < path d = "M6 11h8" /> < path d = "M6 15h8" /> < path d = "M9 21V3" /> < path d = "M9 3h5" /> < / > } } pub const LucideRussianRuble : Path = Path { path : icon_path , icon_type : IconType::Lucide , } ;

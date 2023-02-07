@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < polyline points = "15 10 20 15 15 20" /> < path d = "M4 4v7a4 4 0 0 0 4 4h12" /> < / > } } pub const LucideCornerDownRight : Path = Path { path : icon_path , icon_type : IconType::Lucide , } ;

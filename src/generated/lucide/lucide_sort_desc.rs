@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < path d = "M11 5h10" /> < path d = "M11 9h7" /> < path d = "M11 13h4" /> < path d = "m3 17 3 3 3-3" /> < path d = "M6 18V4" /> < / > } } pub const LucideSortDesc : Path = Path { path : icon_path , icon_type : IconType::Lucide , } ;

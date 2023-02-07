@@ -12,6 +12,7 @@ pub struct Path {
 #[derive(Clone)]
 pub enum IconType {
     HeroIcons(HeroIconsType),
+    Lucide,
 }
 
 #[derive(Clone)]
@@ -49,7 +50,6 @@ pub fn Icon(
     #[prop(into)]
     #[prop(optional)]
     height: MaybeSignal<String>,
-
 ) -> impl IntoView {
     match path.icon_type {
         IconType::HeroIcons(HeroType) => match HeroType {
@@ -89,5 +89,17 @@ pub fn Icon(
                 }
             }
         },
+        IconType::Lucide => {
+            view! {cx,
+                <svg xmlns="http://www.w3.org/2000/svg" class=class() width=width() height=height() viewBox="0 0 24 24"
+                    data-license="From https://github.com/lucide-icons/lucide - Licensed under ISC"
+                    fill=move || fill().is_empty().then_some("none".to_string()).unwrap_or(fill())
+                    stroke-width=move || stroke_width().is_empty().then_some("2".to_string()).unwrap_or(stroke_width()) stroke=move || stroke().is_empty().then_some("currentColor".to_string()).unwrap_or(stroke()) 
+                    stroke-linecap="round" stroke-linejoin="round"
+                >
+                    {(path.path)(cx)}
+                </svg>
+            }
+        }
     }
 }
