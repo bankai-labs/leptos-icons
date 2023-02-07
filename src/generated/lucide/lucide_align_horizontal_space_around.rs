@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < rect x = "9" y = "7" width = "6" height = "10" rx = "2" /> < path d = "M4 22V2" /> < path d = "M20 22V2" /> < / > } } pub const LucideAlignHorizontalSpaceAround : Path = Path { path : icon_path , icon_type : IconType::HeroIcons(crate::HeroIconsType::Mini) , } ;

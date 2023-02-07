@@ -17,7 +17,7 @@ fn main() {
     let mut features = Vec::new();
     let mut imports = Vec::new();
 
-    let ssvg = Regex::new(r##"<svg [^>]+>"##).unwrap();
+    let ssvg = Regex::new(r##"<svg[^>]+>"##).unwrap();
     let esvg = Regex::new(r##"</svg>"##).unwrap();
 
     remove_dir_all("src/generated").unwrap();
@@ -48,7 +48,8 @@ fn main() {
         for path in paths {
             let file_name = path.split('/').last().unwrap();
             if !file_name.ends_with(".svg") {
-                panic!("never happens?");
+                continue;
+                //panic!("never happens?");
             }
             let icon_name = file_name.split('.').next().unwrap();
             let name = prefix.to_owned() + "-" + icon_name;
@@ -160,6 +161,11 @@ fn main() {
     generate(
         "HeroiconsMiniSolid",
         "heroicons/optimized/20/solid",
+        "IconType::HeroIcons(crate::HeroIconsType::Mini)",
+    );
+    generate(
+        "Lucide",
+        "lucide/icons",
         "IconType::HeroIcons(crate::HeroIconsType::Mini)",
     );
 

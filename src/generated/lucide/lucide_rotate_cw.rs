@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < path d = "M21 2v6h-6" /> < path d = "M21 13a9 9 0 1 1-3-7.7L21 8" /> < / > } } pub const LucideRotateCw : Path = Path { path : icon_path , icon_type : IconType::HeroIcons(crate::HeroIconsType::Mini) , } ;

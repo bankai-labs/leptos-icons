@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < path d = "M4 12h8" /> < path d = "M4 18V6" /> < path d = "M12 18V6" /> < path d = "M17 10v4h4" /> < path d = "M21 10v8" /> < / > } } pub const LucideHeading4 : Path = Path { path : icon_path , icon_type : IconType::HeroIcons(crate::HeroIconsType::Mini) , } ;

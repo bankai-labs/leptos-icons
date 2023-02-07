@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < polygon points = "5 4 15 12 5 20 5 4" /> < line x1 = "19" y1 = "5" x2 = "19" y2 = "19" /> < / > } } pub const LucideSkipForward : Path = Path { path : icon_path , icon_type : IconType::HeroIcons(crate::HeroIconsType::Mini) , } ;

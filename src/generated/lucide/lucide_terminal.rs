@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < polyline points = "4 17 10 11 4 5" /> < line x1 = "12" y1 = "19" x2 = "20" y2 = "19" /> < / > } } pub const LucideTerminal : Path = Path { path : icon_path , icon_type : IconType::HeroIcons(crate::HeroIconsType::Mini) , } ;

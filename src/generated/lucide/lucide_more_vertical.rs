@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < circle cx = "12" cy = "12" r = "1" /> < circle cx = "12" cy = "5" r = "1" /> < circle cx = "12" cy = "19" r = "1" /> < / > } } pub const LucideMoreVertical : Path = Path { path : icon_path , icon_type : IconType::HeroIcons(crate::HeroIconsType::Mini) , } ;

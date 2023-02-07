@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < path d = "M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z" /> < / > } } pub const LucideThermometer : Path = Path { path : icon_path , icon_type : IconType::HeroIcons(crate::HeroIconsType::Mini) , } ;

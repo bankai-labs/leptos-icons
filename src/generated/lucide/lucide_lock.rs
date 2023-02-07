@@ -1,0 +1,1 @@
+use leptos :: * ; use crate :: { IconType , Path } ; fn icon_path (cx : Scope) -> Fragment { view ! { cx , < > < rect x = "3" y = "11" width = "18" height = "11" rx = "2" ry = "2" /> < path d = "M7 11V7a5 5 0 0 1 10 0v4" /> < / > } } pub const LucideLock : Path = Path { path : icon_path , icon_type : IconType::HeroIcons(crate::HeroIconsType::Mini) , } ;
