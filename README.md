@@ -10,7 +10,7 @@ This crate makes it easy to use [SVG icons](#) from the following collections (m
   - Outline
   - Mini Solid
 - TODO: [Lipis Flag Icons](https://github.com/lipis/flag-icons)* - MIT License
-- TODO: [Lucide](https://github.com/lucide-icons/lucide) - ISC License
+- [Lucide](https://github.com/lucide-icons/lucide) - ISC License
 - TODO: [Octicons](https://primer.style/octicons/) - MIT License
 
 ## Usage
