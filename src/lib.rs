@@ -26,30 +26,30 @@ pub enum HeroIconsType {
 pub fn Icon(
     cx: Scope,
     path: Path,
-
     #[prop(into)]
-    #[prop(optional)]
+    #[prop(default = "".to_string())]
     class: MaybeSignal<String>,
 
     #[prop(into)]
-    #[prop(optional)]
+    #[prop(default = "".to_string())]
     fill: MaybeSignal<String>,
 
     #[prop(into)]
-    #[prop(optional)]
+    #[prop(default = "".to_string())]
     stroke_width: MaybeSignal<String>,
 
     #[prop(into)]
-    #[prop(optional)]
+    #[prop(default = "".to_string())]
     stroke: MaybeSignal<String>,
 
     #[prop(into)]
-    #[prop(optional)]
+    #[prop(default = "".to_string())]
     width: MaybeSignal<String>,
 
     #[prop(into)]
-    #[prop(optional)]
+    #[prop(default = "".to_string())]
     height: MaybeSignal<String>,
+
 ) -> impl IntoView {
     match path.icon_type {
         IconType::HeroIcons(HeroType) => match HeroType {
