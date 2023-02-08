@@ -27,27 +27,27 @@ pub fn Icon(
     cx: Scope,
     path: Path,
     #[prop(into)]
-    #[prop(default = "".to_string())]
+    #[prop(optional)]
     class: MaybeSignal<String>,
 
     #[prop(into)]
-    #[prop(default = "".to_string())]
+    #[prop(optional)]
     fill: MaybeSignal<String>,
 
     #[prop(into)]
-    #[prop(default = "".to_string())]
+    #[prop(optional)]
     stroke_width: MaybeSignal<String>,
 
     #[prop(into)]
-    #[prop(default = "".to_string())]
+    #[prop(optional)]
     stroke: MaybeSignal<String>,
 
     #[prop(into)]
-    #[prop(default = "".to_string())]
+    #[prop(optional)]
     width: MaybeSignal<String>,
 
     #[prop(into)]
-    #[prop(default = "".to_string())]
+    #[prop(optional)]
     height: MaybeSignal<String>,
 ) -> impl IntoView {
     match path.icon_type {

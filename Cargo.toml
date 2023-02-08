@@ -26,7 +26,7 @@ path = "src/generator.rs"
 required-features = ["generator"]
 
 [dependencies]
-leptos = { version = "0.1", default-features = false }
+leptos = { git = "https://github.com/leptos-rs/leptos", default-features = false }
 quote = { version = "1.0", optional = true }
 convert_case = { version = "0.5", optional = true }
 proc-macro2 = { version = "1.0", optional = true }
